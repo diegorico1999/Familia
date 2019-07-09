@@ -61,4 +61,4 @@ primo(X,Y):- padre_De(Z,X),padre_De(W,Y),hermano(Z,W).
 
 casado(X,Y):- padre_De(X,Z),padre_De(Y,Z),X\=Y.
 
-feliz(X,Y):- \+ is a.
+feliz(X,Y):- padre_De(A,_).
